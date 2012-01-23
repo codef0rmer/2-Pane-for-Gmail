@@ -1,0 +1,25 @@
+{
+   "name": "2-Pane for Gmail",
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/jquery.min.js", "js/app.js" ],
+      "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Tune Gmail by hiding the top navigation.  Easily turned on and off through an icon in addressbar.",
+   "icons": {
+      "128": "images/logo_128.gif",
+      "19": "images/logo_19.gif",
+      "48": "images/logo_48.gif",
+      "64": "images/logo_64.gif"
+   },
+   "page_action": {
+      "default_icon": "images/logo_19.gif",
+      "default_popup": "popup.html",
+      "default_title": "2-Pane for Gmail: Click the icon to toggle the Navigation Bar maximizing vertical space"
+   },
+   "permissions": [ "tabs", "http://mail.google.com/", "https://mail.google.com/", "unlimitedStorage" ],
+   "popup": "popup.html",
+   "version": "0.2"
+}
