@@ -2,6 +2,7 @@ function getNavigation() {
     var navigation = new Array();
     navigation.push($('div.qp[role="navigation"]'));
     navigation.push($('div.qp[role="navigation"]').next());
+    navigation.push($('div.qp[role="navigation"]').next().next());
     return navigation;
 }
 

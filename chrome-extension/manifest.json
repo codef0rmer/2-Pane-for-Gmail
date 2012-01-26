@@ -21,5 +21,5 @@
    },
    "permissions": [ "tabs", "http://mail.google.com/", "https://mail.google.com/", "unlimitedStorage" ],
    "popup": "popup.html",
-   "version": "0.2"
+   "version": "0.3"
 }
