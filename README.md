@@ -35,4 +35,4 @@ Credits
 --------------------------
 
 * License: [Mozilla Public License](http://www.mozilla.org/MPL/)
-* Author: [Amit Gharat](http://amitgharat.wordpress.com/) & [Rob Spectre](http://brooklynhacker.com/)
+* Author: [Amit Gharat](http://amitgharat.wordpress.com/) & [Rob Spectre](http://brooklynhacker.com/) - [2 Pane for Google Reader](https://chrome.google.com/webstore/detail/nljoillhnnmdpimilggdbieeljfbkfgm)
