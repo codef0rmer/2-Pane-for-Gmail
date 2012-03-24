@@ -1,7 +1,7 @@
 
-2 Pane For Gmail
+2 Pane For Gmail/Calendar
 ========================
-A browser extension tuning Gmail with 2-pane navigation. It makes more room for
+A browser extension tuning Gmail/Calendar with 2-pane navigation. It makes more room for
 mails by converting Gmail into a two-pane navigation scheme.
 
 Overview

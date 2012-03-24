@@ -3,6 +3,7 @@ function getNavigation() {
     navigation.push($('div.qp[role="navigation"]'));
     navigation.push($('div.qp[role="navigation"]').next());
     navigation.push($('div.qp[role="navigation"]').next().next());
+    navigation.push($('div#onegoogbar'));
     return navigation;
 }
 
