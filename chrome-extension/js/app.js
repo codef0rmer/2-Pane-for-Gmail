@@ -1,14 +1,18 @@
 function getNavigation() {
     var navigation = new Array();
+    var querystring = parseQuerystring(document.URL);
+
     navigation.push($('div.qp[role="navigation"]'));
     navigation.push($('div.qp[role="navigation"]').next());
-    navigation.push($('div.qp[role="navigation"]').next().next());
     navigation.push($('div#onegoogbar'));
+    if (querystring.view !== 'btop') navigation.push($('div.qp[role="navigation"]').next().next());
+    
     return navigation;
 }
 
 function hideNavigation() {
     var topNavigation = getNavigation();
+
     console.log("Hiding Gmail top navigation...");
     for(var div in topNavigation) {
         if (topNavigation[div]) {
@@ -27,10 +31,20 @@ function showNavigation() {
     }
 }
 
+function parseQuerystring(querystring) {
+    var nvpair = {};
+    var qs = querystring.replace('?', '');
+    var pairs = qs.split('&');
+    pairs.forEach(function(val, key) {
+        var pair = val.split('=');
+        nvpair[pair[0]] = pair[1];
+    });
+    return nvpair;
+}
+
 var topNavigation = getNavigation();
 if (topNavigation) {
     console.log("Applying current settings to Gmail page...");
-    console.log(topNavigation);
     chrome.extension.sendRequest({method: "loadOptions"}, function(response) {
         console.log("Option saved is: " + response.hidden);
         if (response.hidden == "false" || response.hidden == undefined) {
