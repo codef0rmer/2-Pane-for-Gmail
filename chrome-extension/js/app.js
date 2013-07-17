@@ -50,7 +50,9 @@ if (topNavigation) {
         if (response.hidden == "false" || response.hidden == undefined) {
             console.log("Option off - doing nothing.");
         } else {
-            hideNavigation();
+            window.setTimeout(function() {
+                hideNavigation();
+            }, 2000);
         }
     });
 }
