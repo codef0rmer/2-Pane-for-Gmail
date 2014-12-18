@@ -1,6 +1,6 @@
 {
     "name": "2-Pane for Gmail/Calendar",     
-    "version": "0.8", 
+    "version": "0.9", 
     "manifest_version": 2,
     "description": "Tune Gmail by hiding the top navigation.  Easily turned on and off through an icon in addressbar. It works with Google Calendar too.",
     "background": {
@@ -19,7 +19,7 @@
         "64": "images/logo_64.gif"
     },
     "page_action": {
-        "default_icon": "images/logo_19.gif",
+        "default_icon": "images/logo_48.gif",
         "default_popup": "popup.html",
         "default_title": "2-Pane for Gmail/Calendar: Click the icon to toggle the Navigation Bar maximizing vertical space"
     },

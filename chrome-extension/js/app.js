@@ -2,10 +2,10 @@ function getNavigation() {
     var navigation = new Array();
     var querystring = parseQuerystring(document.URL);
 
-    navigation.push($('div.qp[role="navigation"]'));
-    navigation.push($('div.qp[role="navigation"]').next());
+    navigation.push($('div.qp[role="banner"]'));
+    navigation.push($('div.qp[role="banner"]').next());
     navigation.push($('div#onegoogbar'));
-    if (querystring.view !== 'btop') navigation.push($('div.qp[role="navigation"]').next().next());
+    if (querystring.view !== 'btop') navigation.push($('div.qp[role="banner"]').next().next());
     
     return navigation;
 }
